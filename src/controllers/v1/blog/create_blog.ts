@@ -24,7 +24,6 @@ import Blog from '@/models/blog';
  */
 import type { Request, Response } from 'express';
 import type { IBlog } from '@/models/blog';
-import blog from '@/models/blog';
 
 /**
  * Purify the blog content
