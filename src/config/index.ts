@@ -26,6 +26,8 @@ const config = {
   ACCESS_TOKEN_EXPIRY: process.env.ACCESS_TOKEN_EXPIRY as ms.StringValue,
   REFRESH_TOKEN_EXPIRY: process.env.REFRESH_TOKEN_EXPIRY as ms.StringValue,
   WHITELIST_ADMIN_MAIL: ['classlesssupabase@gmail.com', 'classless@gmail.com'],
+  defaultResLimit: 20,
+  defaultResOffset: 0,
 };
 
 export default config;
