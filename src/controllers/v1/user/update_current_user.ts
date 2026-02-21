@@ -73,7 +73,7 @@ const updateCurrentUser = async (
     res.status(500).json({
       code: 'ServerError',
       message: 'Internal Server Error',
-      error: err,
+      errors: err,
     });
 
     logger.error('Error while updating current user', err);

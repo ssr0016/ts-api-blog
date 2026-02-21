@@ -72,7 +72,7 @@ const login = async (req: Request, res: Response): Promise<void> => {
     res.status(500).json({
       code: 'ServerError',
       message: 'Internal Server Error',
-      error: err,
+      errors: err,
     });
 
     logger.error('Error during user registration', err);

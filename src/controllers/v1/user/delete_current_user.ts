@@ -53,7 +53,7 @@ const deleteCurrentUser = async (
     res.status(500).json({
       code: 'ServerError',
       message: 'Internal Server Error',
-      error: err,
+      errors: err,
     });
 
     logger.error('Error while deleting current user', err);
